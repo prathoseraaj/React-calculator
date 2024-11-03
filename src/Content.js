@@ -25,7 +25,12 @@ const Content = () => {
   return (
     <main>
     <div className='container'>
+        <div id="textbox_c">
         <div id='textbox'>{input}</div>
+        <div ><button id='botton7' className='button' onClick={() => handlebutton("C")}>C</button></div>  
+
+        
+        </div>
         <div className='column'>
         <div ><button id='botton7' className='button' onClick={() => handlebutton("7")}>7</button></div>  
         <div ><button id='botton8' className='button'  onClick={() => handlebutton("8")} >8</button></div>        

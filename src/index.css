@@ -13,20 +13,23 @@ body{
 
 .container{
   text-align: center;
-  padding: 50px;
+  padding: 30px;
   background-color: rgb(67, 67, 67);
   border-radius: 10px;
+  width: 320px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .column{
   display: flex;
-  margin: 20px;
+  margin-bottom: 10px;
+  justify-content: space-between;
   flex-direction: row;
 
 }
 button{
-  margin: 20px;
-  padding: 20px;
+  margin: 5px;
+  padding: 30px;
   border-radius: 10px;
   box-shadow: 5px 5px 10px;
   cursor: pointer;
@@ -39,11 +42,30 @@ button{
 
 #textbox{
   background-color: white;
-  padding: 20px;
-  border-radius: 20px;
+  text-align: right;
+  padding: 10px;
+  font-size: 24px;
+  min-height: 50px;
+  margin-bottom: 20px;
+  width: 100%;
 
 }
 
 #textbox{
   color: black;
+}
+
+#textbox_c{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#buttonC {
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
 }
