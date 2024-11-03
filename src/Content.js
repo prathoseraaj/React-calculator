@@ -8,12 +8,22 @@ const Content = () => {
         setInput(input + value) ;
     }
 
+    let handleResult = () => {
 
+        try{
+        let result = eval(input);
+        setInput (result);
+        }
+
+        catch(error){
+            setInput("error");
+        }
+    }
     
   return (
     <main>
     <div className='container'>
-        <div id='textbox'></div>
+        <div id='textbox'>{input}</div>
         <div className='column'>
         <div ><button id='botton7' className='button' onClick={() => handlebutton("7")}>7</button></div>  
         <div ><button id='botton8' className='button'  onClick={() => handlebutton("8")} >8</button></div>        
@@ -39,7 +49,7 @@ const Content = () => {
         <div><button>0</button></div>  
         <div><button>.</button></div>        
         <div><button>+</button></div>        
-        <div ><button id='equalto'>=</button></div>        
+        <div ><button id='equalto' className='button' onClick={handleResult}>=</button></div>        
         </div>
     </div>
     </main>
