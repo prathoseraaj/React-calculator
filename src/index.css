@@ -1,0 +1,45 @@
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255); 
+  text-align: center; 
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.container{
+  text-align: center;
+  padding: 50px;
+  background-color: rgb(67, 67, 67);
+  border-radius: 10px;
+}
+
+.column{
+  display: flex;
+  margin: 20px;
+  flex-direction: row;
+
+}
+button{
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+  cursor: pointer;
+}
+
+#equalto{
+  background-color: yellow;
+  
+}
+
+#textbox{
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+
+}
