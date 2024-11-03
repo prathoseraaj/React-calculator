@@ -8,9 +8,11 @@ const Content = () => {
         setInput(input + value) ;
     }
 
+
     let handleResult = () => {
 
         try{
+            console.log(input);
         let result = eval(input);
         setInput (result);
         }
@@ -46,9 +48,9 @@ const Content = () => {
         </div>
 
         <div className='column'>
-        <div><button>0</button></div>  
-        <div><button>.</button></div>        
-        <div><button>+</button></div>        
+        <div><button id='botton1' className='button' onClick={() => handlebutton("0")}>0</button></div>  
+        <div><button id='botton1' className='button' onClick={() => handlebutton(".")}>.</button></div>        
+        <div><button id='botton1' className='button' onClick={() => handlebutton("+")}>+</button></div>        
         <div ><button id='equalto' className='button' onClick={handleResult}>=</button></div>        
         </div>
     </div>
