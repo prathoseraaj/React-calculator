@@ -5,10 +5,7 @@ const Content = () => {
     //State the input
     let [input,setInput] = useState("");
 
-        let handleButton = () => {
-        document.getElementsByClassName('button')
-    }
-
+    
   return (
     <main>
     <div className='container'>
@@ -21,7 +18,7 @@ const Content = () => {
         </div>
 
         <div className='column'>
-        <div><button id='botton4' onChange={() => handleButton(4)}>4</button></div>  
+        <div><button id='botton4'>4</button></div>  
         <div><button id='botton5'>5</button></div>        
         <div><button id='botton6'>6</button></div>        
         <div><button id='botton*'>*</button></div>        
