@@ -21,13 +21,25 @@ const Content = () => {
             setInput("error");
         }
     }
+
+    let handleClearresult = () => {
+        try{
+            setInput ("") ;
+        }
+
+        catch(error){
+            setInput("Error")
+
+        }
+    }
+
     
   return (
     <main>
     <div className='container'>
         <div id="textbox_c">
         <div id='textbox'>{input}</div>
-        <div ><button id='botton7' className='button' onClick={() => handlebutton("C")}>C</button></div>  
+        <div ><button id='botton7' className='button' onClick={() => handleClearresult("C")}>C</button></div>  
 
         
         </div>
